@@ -1,4 +1,27 @@
-<script>
+
+
+// Scroll event javascript
+$(function(){
+    var lastScrollTop = 0, delta = 15;
+    $(window).scroll(function(event){
+       var st = $(this).scrollTop();
+       
+       if(Math.abs(lastScrollTop - st) <= delta)
+          return;
+if ((st > lastScrollTop) && (lastScrollTop>0)) {
+       // downscroll code
+      $("header").css("top","-80px");
+  
+   } else {
+      // upscroll code
+      $("header").css("top","0px");
+   }
+       lastScrollTop = st;
+    });
+});
+
+//Slideshow javascript
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -29,4 +52,3 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
-</script>
