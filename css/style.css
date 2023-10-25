@@ -7,7 +7,6 @@ body {
   font-family: "Libre Franklin", sans-serif;
   margin: 0;
   height: 1500px;
-
 }
 
 p1 {
@@ -86,77 +85,8 @@ header {
   position: fixed;
   height: 70px;
   transition: 0.3s ease;
-
 }
 
-
-/*nav ul {
-  list-style: none;
-}
-
-nav ul li {
-  display: inline;
-}
-
-nav ul li a {
-  text-decoration: underline;
-  background: none;
-  color: white;
-  padding: 5px 2px;
-  margin-right: 50px;
-  font-weight: 900;
-}
-
-nav ul li a :hover {
-  background: #ffffff;
-  color: #000000;
-}
-
-
-
-content ul {
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
-}
-
-content ul li {
-  display: inline;
-  display: flex;
-  align-items: center;
-}
-
-content ul li img {
-  padding: 5px 2px;
-  margin-right: 10px;
-  font-weight: 900;
-  border-radius: 10px;
-  max-width: 100%;
-}
-
-content ul li img :hover {
-  background: #ffffff;
-  color: #000000;
-}
-
-.contact {
-  background-color: ;
-
-  text-align: center;
-}
-
-.contact ul {
-  list-style: none;
-}
-
-.contact a {
-  text-decoration: none;
-  background: none;
-  color: #636b46;
-  font-weight: 900;
-  font-size: 1.1rem;
-} */
 
 .row {
   display: flex;
@@ -167,8 +97,9 @@ content ul li img :hover {
 }
 
 .column2 {
-  flex: 5%;
-  white-space: nowrap;
+  flex: 9%;
+  margin-top: 4px;
+ 
 }
 
 main {

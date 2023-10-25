@@ -22,27 +22,48 @@ if ((st > lastScrollTop) && (lastScrollTop>0)) {
 
 //Slideshow javascript
 
-let slideIndex = 1;
-showSlides(slideIndex);
+const slideIndexes = [1, 1, 1];
 
-function plusSlides(n) {
-  showSlides((slideIndex += n));
+showSlides('slideDeck1', slideIndexes[0]);
+showSlides('slideDeck2', slideIndexes[1]);
+showSlides('slideDeck3', slideIndexes[2]);
+
+function plusSlides(slideShowClassName, n) {
+  let slideShowIndex = slideShowClassName.charAt(9);
+  let slideIndex = slideIndexes[slideShowIndex - 1];
+
+  slideIndexes[slideShowIndex - 1] += n;
+  
+  showSlides(slideShowClassName, slideIndexes[slideShowIndex - 1]);
 }
 
-function currentSlide(n) {
-  showSlides((slideIndex = n));
+function currentSlide(slideShowClassName, n) {
+  let slideShowIndex = slideShowClassName.charAt(9);
+  let slideIndex = slideIndexes[slideShowIndex - 1];
+
+  slideIndexes[slideShowIndex - 1] = n;
+  
+  showSlides(slideShowClassName, slideIndexes[slideShowIndex - 1]);
 }
 
-function showSlides(n) {
+function showSlides(slideShowClassName, n) {
+  //slideShowClassName defines slideshows to make three, instead of one 
   let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
+  
+  let slideShowIndex = slideShowClassName.charAt(9);
+  let slideIndex = slideIndexes[slideShowIndex - 1];
+
+  let slides = document.getElementsByClassName(slideShowClassName);
+  let dots = document.getElementsByClassName("slideDeckDot" + slideShowIndex);
+
   if (n > slides.length) {
     slideIndex = 1;
   }
-  if (n < 1) {
+  else if (n < 1) {
     slideIndex = slides.length;
-  }
+  }  
+  slideIndexes[slideShowIndex - 1] = slideIndex;
+
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }

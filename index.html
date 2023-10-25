@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <script src="script.js" defer></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
   <title>11655 - Hello World!</title>
 
@@ -35,7 +35,7 @@
           <webh2> A Look At Australias Bushfire History </webh2>
         </div>
         <div class="column2">
-
+         
         </div>
       </div>
     </header>
@@ -47,17 +47,10 @@
 
     <!-- Introduction. Introduces the three categories, features-->
 
-    <div class="wrapper">
+    <div class="wrapper" style="margin-top: 70px;">
 
-      <!-- My heading was collapsing so I added breaks....-->
-
-      </br>
-      </br>
-      </br>
-
-      <h1>Introduction</h1>
-
-
+      <h1>Introduction</h1>  
+      
       <main p> Bushfires is a broad term often used to describe an expected grass, forest or scrub fire. In Australia,
         they are part of the environments natural cycle, forming a complex relationship to both plants and animals. Dry
         sticks, grass, twigs and leaves can all provide fuel to these fires (The Australian Institute for Disaster
@@ -108,7 +101,13 @@
         colonisation of Australia (KLC, 2022). Specifically the program focuses on lighting ‘cool’ fires, the specific
         technique difference from the western management ways, which are more destructive then renewing. (KLC, 2022).
       </main>
-
+      <div class="row">
+        <div class="column1">
+        </div>
+        <div class="column2">
+          <div><img src="/assets/fire.gif" width="100"  alt="My Image" /></div>
+        </div>
+      </div>
     </div>
 
     <!-- Slideshow -->
@@ -116,45 +115,45 @@
       <!-- Slideshow container -->
 
       <!-- Full-width images with number and caption text -->
-      <div class="mySlides fade">
+      <div class="mySlides fade slideDeck1">
         <div class="numbertext">1 / 3</div>
         <img src="assets/controlled_burn_at_sunsetIMAGE1.jpg" style="width: 50%" />
         <div class="text"> 'Controlled Burn' - Dusk falls on a burning grassland in Northern Australia
           </br>
-          The Nature Conservecy, Ted Wood, 2023
+          (The Nature Conservecy, Ted Wood, 2023)
         </div>
 
 
       </div>
 
-      <div class="mySlides fade">
+      <div class="mySlides fade slideDeck1">
         <div class="numbertext">2 / 3</div>
         <img src="assets/paintingIMAGE2.jpg" style="width: 50%" />
 
         <div class="text"> 'Aboriginals Using Fire to Hunt Kangaroos'
           </br>
-          Joseph Lycett, 1775-1828</div>
+          (Joseph Lycett, 1775-1828)</div>
       </div>
 
-      <div class="mySlides fade">
+      <div class="mySlides fade slideDeck1">
         <div class="numbertext">3 / 3</div>
         <img src="assets/Capture+fire+scar+mappingIMAGE3.png" style="width: 50%" />
         <div class="text">Relatively Safe 'Cool' Burns Creating Firebreaks
           </br>
-          The Conservation, 2020
+          (The Conservation, 2020)
         </div>
       </div>
 
       <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <a class="prev" onclick="plusSlides('slideDeck1', -1)">&#10094;</a>
+      <a class="next" onclick="plusSlides('slideDeck1', 1)">&#10095;</a>
     </div>
 
 
     <div style="text-align: center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot slideDeckDot1" onclick="currentSlide('slideDeck1', 1)"></span>
+      <span class="dot slideDeckDot1" onclick="currentSlide('slideDeck1', 2)"></span>
+      <span class="dot slideDeckDot1" onclick="currentSlide('slideDeck1', 3)"></span>
     </div>
 
     <!-- Section 2 -->
@@ -186,45 +185,56 @@
       <!-- Slideshow container -->
 
       <!-- Full-width images with number and caption text -->
-      <div class="mySlides fade">
+      <div class="mySlides fade slideDeck2">
         <div class="numbertext">1 / 3</div>
         <img
-          src="https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1638882947/EducationHub/photos/tourists-at-victoria-falls.jpg"
+          src="assets/black-saturday-bushfiresIMAGE1.jpg"
           style="width: 50%" />
-        <div class="text">Flyer Promoting 'Circles' Dance Party</div>
+        <div class="text">'Red squares mark active fires, burning near the Great Dividing Range, threatening the water supply of Victoria's most populous city, Melbourne' 
+        </br>
+          (Nasa, Jeff Schmaltz, Modis Rapid Response Team, Goddard Space Flight Centre, 2023) </div>
       </div>
 
-      <div class="mySlides fade">
+      <div class="mySlides fade slideDeck2">
         <div class="numbertext">2 / 3</div>
         <img
-          src="https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1638882947/EducationHub/photos/tourists-at-victoria-falls.jpg"
+          src="assets/black-saturday-bushfires-kinglakeIMAGE2.jpg"
           style="width: 50%" />
-        <div class="text">Flyer Promoting 'Frigid' Dance Party</div>
+        <div class="text">Black Saturday bushfires at Kinglake
+        </br>
+          (Australian Institute for Disaster Resilience, 2009, 2023) 
+        </div>
       </div>
 
-      <div class="mySlides fade">
+      <div class="mySlides fade slideDeck2">
         <div class="numbertext">3 / 3</div>
         <img
-          src="https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1638882947/EducationHub/photos/tourists-at-victoria-falls.jpg"
+          src="assets/vl1044IMAGE3.jpg"
           style="width: 50%" />
-        <div class="text">Flyer Promoting 'Eternity' Dance Party</div>
+        <div class="text">CFA Volunteers and People with their arms around each other on Black Saturday
+        </br>
+        (Australian Institute for Disaster Resilience, 2009, 2023) 
+        </div>
       </div>
 
       <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <a class="prev" onclick="plusSlides('slideDeck2',-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides('slideDeck2',1)">&#10095;</a>
     </div>
 
 
 
     <div style="text-align: center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot slideDeckDot2" onclick="currentSlide('slideDeck2',1)"></span>
+      <span class="dot slideDeckDot2" onclick="currentSlide('slideDeck2',2)"></span>
+      <span class="dot slideDeckDot2" onclick="currentSlide('slideDeck2',3)"></span>
     </div>
     <!-- Section 3 -->
     <div class="wrapper">
       <h1>Future Percived Bushfire Impact & Its Effects</h1>
+      <main p>Changes in how the land is managed, as well as the climate, mean that Australia's future interaction with bushfires, are not looking too positive. Climate change in particular, will have drastic effects,  increasing both the length and the predictability of bushfires (Adapt NSW, 2023). The severity of these fires will increase due to these factors, which poses a large threat to the lives and infrastructure of Australian people.  </main>
+      <main p>The future effects of bushfires have already showcased their deadly capabilities. For example, the 2020/2019 bushfires on the east coast set records for its destruction. Burning a total of over 21% of the forested area, an unprecedented number, more than anywhere seen in the world, let alone Australia (Norman B, Newman P & Steffen W, 2021). These fires effected the air quality of many areas, Canberra registering an air quality index of "4650, more than 23 times the hazardous level" (Norman B, Newman P & Steffen W, 2021). This was similar along the eastern coast, with thick black smoke coating Australia and its communities for months.  </main>
+      <main p>By acknowledging the differences in our climate and how it interacts with bushfires, Australia will be able to adapt, changing both how bushfires and handled, and perceived (Adapt NSW, 2023). Although as a society, it requires understanding that the increasing threat of bushfires is directly correlated to climate change. Which is difficult, especially regarding the fact that climate change has played a role in the effects bushfires have had for decades now, this is not a recent issue. It may cost Australia its people and its communities for individuals to be swayed into recognising the link in climate change.  </main>
     </div>
 
     <!-- Slideshow -->
@@ -233,15 +243,18 @@
       <!-- Slideshow container -->
 
       <!-- Full-width images with number and caption text -->
-      <div class="mySlides fade">
+      <div class="mySlides fade slideDeck3">
         <div class="numbertext">1 / 3</div>
         <img
-          src="https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1638882947/EducationHub/photos/tourists-at-victoria-falls.jpg"
+          src="assets/bushfires2020.png"
           style="width: 50%" />
-        <div class="text">Flyer Promoting 'Circles' Dance Party</div>
+        <div class="text"> The 2019-2020 fire season was particularly challenging for Australia
+        </br>
+        (Martin Ollman, 2020)
+        </div>
       </div>
 
-      <div class="mySlides fade">
+      <div class="mySlides fade slideDeck3">
         <div class="numbertext">2 / 3</div>
         <img
           src="https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1638882947/EducationHub/photos/tourists-at-victoria-falls.jpg"
@@ -249,7 +262,7 @@
         <div class="text">Flyer Promoting 'Frigid' Dance Party</div>
       </div>
 
-      <div class="mySlides fade">
+      <div class="mySlides fade slideDeck3">
         <div class="numbertext">3 / 3</div>
         <img
           src="https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1638882947/EducationHub/photos/tourists-at-victoria-falls.jpg"
@@ -258,14 +271,14 @@
       </div>
 
       <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <a class="prev" onclick="plusSlides('slideDeck3',-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides('slideDeck3',1)">&#10095;</a>
     </div>
 
     <div style="text-align: center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot slideDeckDot3" onclick="currentSlide('slideDeck3',1)"></span>
+      <span class="dot slideDeckDot3" onclick="currentSlide('slideDeck3',2)"></span>
+      <span class="dot slideDeckDot3" onclick="currentSlide('slideDeck3',3)"></span>
     </div>
 
 
