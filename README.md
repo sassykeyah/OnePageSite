@@ -1,8 +1,1 @@
-# OnePageSite
 
-
-My website features content regarding the timeline of bushfire effects and the possible difference in our future. To structure my site I split it up into four categories. Intro, section one, two and three. I used divs to sperate and manage my content in the HTML, structuring it into mini parts. I did this so my content had even breaks, and was collapsible and easily editable. 
-
-Within each section, I implemented a slideshow table, using a substring to enable the changing of numbers, dots and slides. Originally I had created the slideshow to be in the Intro, so it was not made for more than three images. It took me awhile to edit the slides to be a cohesive group, instead of seperate, mixed up javascript. I had issues because lots of the equations and statements regarding managing the singular slideshow changing, had to be altered to include two more slideshows. 
-
-The other Javascript I implemented was a scroll event. It iniated a disappearing header. To create this scroll event I had to use the library JQuery, and attach implement it onto a function. To start, it has to monitor where the users scroll pos is (LastScrollTop), then it defines the pos in which it will iniate the event. It creates a varible for ScrollTop, st, than an equation to locate the value in which the pos of the users scroll is(LastScrollTop). It then states if the scroll top is larger than 0 we minus 80px to the header, else is null, 0px
