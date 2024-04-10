@@ -66,9 +66,7 @@ body {
   header {
     background-color: #636b46;
   }
-  nav {
-   
-  }
+ 
   nav ul {
     list-style: none;
   }
@@ -89,9 +87,7 @@ body {
     color: #000000;
   }
   
-  content {
-  
-  }
+ 
   content ul {
     list-style: none;
     display: grid;
