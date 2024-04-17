@@ -4,36 +4,22 @@ body {
     color: white;
     font-size: 16px;
     font-family: "Libre Franklin", sans-serif;
-  }
+    margin: 10px;
   
-  p1 {
-    font-weight: 600;
-      text-align: center;
+}
   
-    font-size: 2.6rem;
-    
-  }
   
-  p2 {
-    font-weight: 600;
-    margin-bottom: 30px;
-    font-size: 1.2rem;
-    padding: 10px 10px;
-    text-align: center;
-  }
-  
-  webh1,
-  webh2,
+ 
   h1,
   h2,
   h3 {
     font-weight: 900;
   }
-  webh1 {
+  .webh1 {
     font-size: 1.8rem;
     padding-left: 10px;
   }
-  webh2 {
+  .webh2 {
     font-size: 1.2rem;
     display: block;
     padding-left: 10px;
@@ -42,6 +28,7 @@ body {
   
   h1 {
     font-size: 1.6rem;
+    text-align: center;
   }
   
   h2 {
@@ -55,7 +42,9 @@ body {
   main p {
     font-weight: 0px;
     line-height: 1.5;
+    text-align: justify;
   }
+  
   
   .wrapper {
     width: 90%;
@@ -65,7 +54,19 @@ body {
   /* this is a default stylesheet, we'll add content to it in week 10 */
   header {
     background-color: #636b46;
+    
   }
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+    
   
   button {
     background-color: #636b46;
@@ -73,28 +74,50 @@ body {
     font-size: 1.2rem;
     color: #e9e7da;
    }
-
+   .navrow {
+   
+    display: flex;
+    align-items: center;
+    align-content: flex-end;
+    justify-content: space-between;
+    
+  }
   nav ul {
     list-style: none;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
   }
   nav ul li {
     display: inline;
   }
   
   nav ul li a {
-    text-decoration: underline;
     background: none;
     color: white;
     padding: 5px 2px;
     margin-right: 50px;
     font-weight: 900;
   }
-  nav ul li a :hover {
-    background: #ffffff;
-    color: #000000;
+  
+  .bnav ul {
+    list-style: none;
+    
+    text-align: center;
+    padding: 14px 16px;
+  }
+  .bnav ul li {
+    display: inline;
   }
   
- 
+  .bnav ul li a {
+    background: none;
+    color: white;
+    padding: 5px 2px;
+    margin-right: 50px;
+    font-weight: 900;
+  }
+  
   content ul {
     list-style: none;
     display: grid;
@@ -142,9 +165,16 @@ body {
     flex: 95%;
   }
   .column2 {
-    flex: 5%;
-    white-space: nowrap;
+    flex: 50%;
+   
   }
+  .contentcolumn1 {
+    flex: 50%;
+  }
+  .contentcolumn2 {
+    flex: 50%;
+     }
+
   main {
     color: #636b46;
     font-weight: 900;
