@@ -1,4 +1,11 @@
-<script>
+
+// When the user clicks on <div>, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+
+/* 
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -25,4 +32,4 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
-</script>
+</script> */

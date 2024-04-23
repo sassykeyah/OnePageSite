@@ -493,3 +493,60 @@ footer {
     opacity: 1
   }
 }
+
+.eventcontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.event {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+}
+
+.event h2 {
+  margin-top: 0;
+  text-align: left;
+}
+
+.event p {
+  margin: 5px 0;
+}
+
+/* Popup container */
+.popup {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  height: 50%;
+  width: 50%;
+  background-color: white;
+  color: black;
+  text-align: left;
+  border-radius: 8px;
+  padding: 8px;
+  position: fixed;
+  top:25%;
+  left:25%;
+  z-index: 1;
+}
+
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
