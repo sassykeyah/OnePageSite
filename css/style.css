@@ -520,33 +520,23 @@ footer {
   margin: 5px 0;
 }
 
-/* Popup container */
-.popup {
-  position: absolute;
+.map {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.register-button {
+  right: 0;
+  position: relative;
   display: inline-block;
-  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #636b46;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
-/* The actual popup (appears on top) */
-.popup .popuptext {
-  visibility: hidden;
-  height: 50%;
-  width: 50%;
-  background-color: white;
-  color: black;
-  text-align: left;
-  border-radius: 8px;
-  padding: 8px;
-  position: fixed;
-  top:25%;
-  left:25%;
-  z-index: 1;
-}
-
-
-/* Toggle this class when clicking on the popup container (hide and show the popup) */
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s
+.register-button:hover {
+  background-color: #444a30;
 }
