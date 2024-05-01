@@ -1,18 +1,16 @@
 body {
   background-color: #e9e7da;
   color: white;
-  font-size: 16px;
-  font-family: "Libre Franklin", sans-serif;
-  margin: 10px;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  margin: 0px;
 
 }
-
-
 
 h1,
 h2,
 h3 {
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .webh1 {
@@ -22,7 +20,7 @@ h3 {
 }
 
 .webh2 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   display: block;
   padding-left: 10px;
   padding-bottom: 10px;
@@ -56,6 +54,7 @@ main p {
 
 /* this is a default stylesheet, we'll add content to it in week 10 */
 header {
+  padding-top: 30px;
   background-color: #636b46;
 
 }
@@ -104,8 +103,15 @@ nav ul li a {
   color: white;
   padding: 5px 2px;
   margin-right: 50px;
-  font-weight: 900;
+  font-weight: 400;
+  text-decoration: none;
 }
+
+nav ul li a:hover {
+  color: #262a1b;
+  
+}
+
 
 .bnav ul {
   list-style: none;
@@ -123,7 +129,7 @@ nav ul li a {
   color: white;
   padding: 5px 2px;
   margin-right: 50px;
-  font-weight: 900;
+  font-weight: 500;
 }
 
 content ul {
@@ -142,7 +148,7 @@ content ul li {
 content ul li img {
   padding: 5px 2px;
   margin-right: 10px;
-  font-weight: 900;
+  font-weight: 300;
   border-radius: 10px;
   max-width: 100%;
 }
@@ -343,7 +349,7 @@ content ul li img :hover {
   text-decoration: none;
   background: none;
   color: #636b46;
-  font-weight: 900;
+  font-weight: 300;
   font-size: 1.1rem;
 }
 
@@ -370,7 +376,7 @@ content ul li img :hover {
 
 main {
   color: #636b46;
-  font-weight: 900;
+  font-weight: 300;
   padding: 1em 0;
 
   /*   padding: 10px 10px 0px 5px; */
@@ -378,7 +384,7 @@ main {
 
 footer {
   background-color: #636b46;
-  padding: 15px;
+  padding-bottom: 30px;
   text-align: center;
   width: 90%;
   margin: 0 auto;
@@ -440,9 +446,7 @@ footer {
 /* Caption text */
 .text {
   color: #636b46;
-  font-weight: 900;
-
-
+  font-weight: 300;
   font-size: 30px;
   padding: 8px 12px;
   /*   position: absolute; */
@@ -539,4 +543,41 @@ footer {
 
 .register-button:hover {
   background-color: #444a30;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 20px; /* Gap between columns */
+}
+
+.footer-column {
+  padding: 20px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.footer-column ul li a:hover {
+  color: #262a1b;
 }
