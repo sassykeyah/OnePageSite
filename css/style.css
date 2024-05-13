@@ -289,7 +289,7 @@ content ul li img :hover {
 /* Styling for buttons */
 .fbutton {
   display: inline-block;
-  padding: 5px 10px;
+  padding: 5px 10px 10px 5px;
   background-color: #636b46;
   color: #fff;
   border: none;
