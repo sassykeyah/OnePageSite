@@ -2,7 +2,7 @@ body {
   background-color: #e9e7da;
   color: white;
   font-size: 16px;
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "roca", sans-serif;
   margin: 10px;
 
 }
@@ -13,9 +13,11 @@ h1,
 h2,
 h3 {
   font-weight: 900;
+  
 }
 
 .webh1 {
+  font-family: "roca", sans-serif;
   font-size: 1.8rem;
   padding-left: 10px;
   font-weight: 0px;
@@ -46,12 +48,14 @@ main p {
   font-weight: 0px;
   line-height: 1.5;
   text-align: justify;
+  
 }
 
 
 .wrapper {
   width: 90%;
   margin: 0 auto;
+  
 }
 
 /* this is a default stylesheet, we'll add content to it in week 10 */
@@ -93,10 +97,12 @@ nav ul {
   float: left;
   text-align: center;
   padding: 14px 16px;
+  
 }
 
 nav ul li {
   display: inline;
+  
 }
 
 nav ul li a {
@@ -104,7 +110,11 @@ nav ul li a {
   color: white;
   padding: 5px 2px;
   margin-right: 50px;
-  font-weight: 900;
+  font-size: 1.4rem;
+  padding-left: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: "roca", sans-serif;
 }
 
 .bnav ul {
@@ -116,6 +126,7 @@ nav ul li a {
 
 .bnav ul li {
   display: inline;
+  
 }
 
 .bnav ul li a {
@@ -124,6 +135,8 @@ nav ul li a {
   padding: 5px 2px;
   margin-right: 50px;
   font-weight: 900;
+  text-decoration: none;
+  font-family: "roca", sans-serif;
 }
 
 content ul {
@@ -154,8 +167,9 @@ content ul li img :hover {
 
 .search-bar {
   display: flex;
-  justify-content: flex-end; /* Align to the right */
-  padding: 10px;
+  justify-content: none ; /* Align to the right */
+  padding: 20px;
+  margin-left: 30px;
   
 }
 .search-bar input,
@@ -220,6 +234,8 @@ content ul li img :hover {
   box-shadow: 02px4pxrgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
+  
+  
   /* Stack elements vertically */
 }
 
@@ -312,7 +328,7 @@ content ul li img :hover {
   padding: 10px;
   border-radius: 5px;
   margin-top: 20px;
-  max-width: 200px;
+  max-width: 300px;
 }
 
 .trending-topics h3 {
@@ -349,6 +365,7 @@ content ul li img :hover {
 
 .row {
   display: flex;
+  
 }
 
 .column1 {
@@ -362,6 +379,9 @@ content ul li img :hover {
 
 .contentcolumn1 {
   flex: 50%;
+  background-color: #f5f5f5;
+  padding: 10px;
+  
 }
 
 .contentcolumn2 {
