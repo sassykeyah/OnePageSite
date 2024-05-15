@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>11655 - Hello World!</title>
+  <title>11655 - Hello World!</title>
+
+  <!-- import the stylesheet - we'll cover this in week 10 -->
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.typekit.net/ipl2sbt.css">
+</head>
+
+<body>
+  <header>
+    <div class="wrapper">
+
+      <div class= "webh1"> Urbeez ★</div> 
+
+      <div class="navrow">
+        <div>
+          <webh2> </webh2>
+        </div>
+        <div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="forum.html">Forum</a></li>
+              <li><a href="library.html">Library</a></li>
+              <li><a href="events.html">Events</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+    <section id="profilepagecontainer">
+        <div class="profile img"><img src="assets/Unknown_person.jpg" alt="Saskia" style="width:100%"></div>
+        <div class="profilebadges">
+          <h2>Badges</h2>
+          <div class="badge"><img src="assets/plantsprout.png" alt="badge1"></div>
+          <div class="badge"><img src="assets/potplant.png" alt="badge2"></div>
+          <div class="badge"><img src="assets/tree.png" alt="badge3"></div>
+        </div>    
+
+        <div class="profilecontainer">
+            <div class="profile">
+                <h1 id="user-name">User Name</h1>
+                <p><strong>Email:</strong> <span id="email">user@example.com</span></p>
+                <p><strong>Interests:</strong> <span id="interests">Interest 1, Interest 2</span></p>
+                <p><strong>About Me:</strong> <span id="about-me">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></p>
+                <button onclick="editProfile()">Edit Profile</button>
+                <form id="profile-form" style="display: none;">
+                    <input type="file" id="profile-pic-input" accept="image/*"><br>
+                    <input type="text" id="user-name-input" class="edit-input" placeholder="User Name"><br>
+                    <input type="email" id="email-input" class="edit-input" placeholder="Email"><br>
+                    <input type="text" id="interests-input" class="edit-input" placeholder="Interests"><br>
+                    <textarea id="about-me-input" class="edit-input" placeholder="About Me"></textarea><br>
+                    <button type="submit" class="edit-button">Save</button>
+                    <button type="button" class="edit-button" onclick="cancelEdit()">Cancel</button>
+                </form>
+            </div>
+            
+            <script>
+                function editProfile() {
+                    var profileInfo = document.querySelectorAll('.profile span');
+                    var formInputs = document.querySelectorAll('.edit-input');
+            
+                    profileInfo.forEach(function(info, index) {
+                        formInputs[index].value = info.textContent.trim();
+                    });
+            
+                    document.getElementById('profile-form').style.display = 'block';
+                    document.querySelectorAll('.profile span').forEach(function(span) {
+                        span.style.display = 'none';
+                    });
+                }
+            
+                function cancelEdit() {
+                    document.getElementById('profile-form').style.display = 'none';
+                    document.querySelectorAll('.profile span').forEach(function(span) {
+                        span.style.display = 'inline';
+                    });
+                }
+            
+                document.getElementById('profile-form').addEventListener('submit', function(event) {
+                    event.preventDefault(); // Prevent form submission
+            
+                    // Update profile information with form values
+                    document.getElementById('user-name').textContent = document.getElementById('user-name-input').value;
+                    document.getElementById('email').textContent = document.getElementById('email-input').value;
+                    document.getElementById('interests').textContent = document.getElementById('interests-input').value;
+                    document.getElementById('about-me').textContent = document.getElementById('about-me-input').value;
+            
+                    // Restore display of profile elements
+                    cancelEdit();
+                });
+            </script>
+        </div>
+
+           
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrapper">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h4>Main Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="newsletter-signup">
+      <h4>Sign up for Newsletter</h4>
+      <form action="your-newsletter-action.php" method="post">
+        <input type="email" name="email" placeholder="Enter your email">
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  
+    <script src="script.js"></script>
+  </footer>
+</body>
+
+</html>
