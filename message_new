@@ -6,12 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>11655 - Hello World!</title>
   <title>11655 - Hello World!</title>
 
   <!-- import the stylesheet - we'll cover this in week 10 -->
@@ -52,30 +46,22 @@
 
   <main>
     
-<div class="replycontainer">
-    <div class="reply">
-        <img src="assets/Unknown_person.jpg" class="roundpfp roundpfpgap" height="30px" width="30px"><span class="sender">You:</span> Hi there! I'm interested in learning more about urban farming.
-        <br>
-        <span class="timesent">Sent: May 15, 2024</span>
-    </div>
-    <div class="reply">
-        <img src="assets/Unknown_person.jpg" class="roundpfp roundpfpgap" height="30px" width="30px"><span class="sender">Jane:</span> Hi Urbee! That's great to hear. Urban farming is a fantastic way to grow fresh produce in urban environments.
-        <br>
-        <span class="timesent">Sent: May 16, 2024</span>
+    <div class="replycontainer">
+      <input type="text" id="user-name-input" class="edit-input" placeholder="User Name"><br>
+      <input type="email" id="email-input" class="edit-input" placeholder="Email"><br>
+      <input type="text" id="interests-input" class="edit-input" placeholder="Interests"><br>
+        <div class="reply-box">
+            <textarea placeholder="Type your reply here..."></textarea>
+            <button onclick="sendReply()">Send</button>
+        </div>
     </div>
 
-    <div class="reply-box">
-        <textarea placeholder="Type your reply here..."></textarea>
-        <button onclick="sendReply()">Send</button>
-    </div>
-</div>
-
-<script>
-    function sendReply() {
-        // Placeholder function for sending reply (can be implemented with backend or API call)
-        alert("Your message has been sent!");
-    }
-</script>
+  <script>
+      function sendReply() {
+          // Placeholder function for sending reply (can be implemented with backend or API call)
+          alert("Your message has been sent!");
+      }
+  </script>
     
   </main>
 

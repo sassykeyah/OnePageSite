@@ -749,3 +749,11 @@ footer {
   font-size: 14px;
   color: rgb(140, 140, 140);
 }
+
+.poster {
+  color: gray;
+}
+
+.post a {
+  text-decoration: none;
+}
