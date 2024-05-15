@@ -661,3 +661,7 @@ footer {
   border-radius: 15px;
   margin: 10px;
 }
+.roundpfp {
+  border-radius: 50%;
+  overflow: hidden; /* Ensures the image remains within the rounded border */
+}
