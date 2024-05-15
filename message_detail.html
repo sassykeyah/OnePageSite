@@ -51,39 +51,31 @@
 
 
   <main>
-    <div class="messagecontainer">
-        <h2>Messages</h2>
-        <div class="message unread" onclick="viewMessage()">
-            <div class="unread-dot"></div> <!-- Added -->
-            <strong>Subject:</strong> Workshop Invitation: Introduction to Urban Farming
-            <br>
-            <span>From: Urban Farming Community</span>
-            <br>
-            <span>Sent: May 15, 2024</span>
-        </div>
-        <div class="message read" onclick="viewMessage()">
-            <strong>Subject:</strong> Volunteer Opportunity: Community Garden Planting Day
-            <br>
-            <span>From: Local Community Center</span>
-            <br>
-            <span>Sent: May 14, 2024</span>
-        </div>
-        <div class="message unread" onclick="viewMessage()">
-            <div class="unread-dot"></div> <!-- Added -->
-            <strong>Subject:</strong> Urban Farming Tips: Growing Herbs in Small Spaces
-            <br>
-            <span>From: Urban Gardening Society</span>
-            <br>
-            <span>Sent: May 13, 2024</span>
-        </div>
-    </div>
     
-    <script>
-        function viewMessage() {
-            // Redirect to message detail page
-            window.location.href = "message_detail.html";
-        }
-    </script>
+<div class="replycontainer">
+    <div class="reply">
+        <img src="assets/Unknown_person.jpg" class="roundpfp roundpfpgap" height="30px" width="30px"><span class="sender">You:</span> Hi there! I'm interested in learning more about urban farming.
+        <br>
+        <span class="timesent">Sent: May 15, 2024</span>
+    </div>
+    <div class="reply">
+        <img src="assets/Unknown_person.jpg" class="roundpfp roundpfpgap" height="30px" width="30px"><span class="sender">Jane:</span> Hi Urbee! That's great to hear. Urban farming is a fantastic way to grow fresh produce in urban environments.
+        <br>
+        <span class="timesent">Sent: May 16, 2024</span>
+    </div>
+
+    <div class="reply-box">
+        <textarea placeholder="Type your reply here..."></textarea>
+        <button onclick="sendReply()">Send</button>
+    </div>
+</div>
+
+<script>
+    function sendReply() {
+        // Placeholder function for sending reply (can be implemented with backend or API call)
+        alert("Your reply has been sent!");
+    }
+</script>
     
   </main>
 
