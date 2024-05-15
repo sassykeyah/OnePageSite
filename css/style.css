@@ -654,6 +654,16 @@ footer {
   display: flex;
 }
 
+.badge {
+  padding-left:100px;
+  text-align: center;
+
+}
+
+.badge p {
+  text-align: center;
+}
+
 .profilebadges img {
   height: 200px;
   width: auto;
@@ -680,6 +690,15 @@ footer {
   padding: 10px 0;
   cursor: pointer;
   position: relative; /* Added */
+}
+
+.messageboxcontainer {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+}
+.messageflex {
+  grid-column: 2;
+
 }
 .message:last-child {
   border-bottom: none;

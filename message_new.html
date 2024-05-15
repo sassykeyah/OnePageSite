@@ -45,11 +45,14 @@
 
 
   <main>
+    <h1>Send Message</h1>
     
     <div class="replycontainer">
-      <input type="text" id="user-name-input" class="edit-input" placeholder="User Name"><br>
-      <input type="email" id="email-input" class="edit-input" placeholder="Email"><br>
-      <input type="text" id="interests-input" class="edit-input" placeholder="Interests"><br>
+      <p>Recipient:</p>
+      <input type="text" id="user-name-input" class="edit-input" placeholder="John316"><br>
+      <p>Subject:</p>
+      <input type="text" id="subject-input" class="edit-input" placeholder=""><br>
+      <p>Your message:</p>
         <div class="reply-box">
             <textarea placeholder="Type your reply here..."></textarea>
             <button onclick="sendReply()">Send</button>
@@ -60,6 +63,7 @@
       function sendReply() {
           // Placeholder function for sending reply (can be implemented with backend or API call)
           alert("Your message has been sent!");
+          window.location.href = "messages.html";
       }
   </script>
     
